@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>🙂 Monday F-day 🆓</title>
+ 
+ 	<link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/rvf8mly.css">
+	<style type="text/css">
+
+		font-family: "t26-carbon", monospace;
+		font-weight: 400;
+		font-style: normal;
+
+
+
+	.orbit-regular {
+    font-family: "Orbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+	.chicken {padding-top: 120px;}
+
+body,p{margin:0; margin-left:0; background: none; overflow-x: hidden;}
+			.ticker{position: absolute; overflow: hidden; left:0; right:0;}
+			#ticker1{
+				top:0;
+				width: 100%; height: 3rem;
+				font-size: 2rem; line-height:3.3rem;
+				background: black; color: yellow;
+			}
+
+			.wrap{width:600px; margin:auto;}
+			header {padding-bottom:0vw; position:relative;}
+			header h1 {margin-top:140px; margin-bottom:-90px;}
+			
+			html, body {font-family: "t26-carbon", monospace,
+								     "Orbit", sans-serif; font-size: 1.2rem;line-height: 1.3; word-break: keep-all;}
+
+		    .clock img {
+            width: 100px;
+            height: auto;
+            margin: auto;
+            margin-bottom: 50px;
+            transition: transform 1s ease;
+        	}
+
+        	.clock img:hover {
+            transform: scale(1.1); 
+        	}
+
+	     	.cry {font-size:1rem; margin-top:0;}
+	     	.MF_writing {width:600px; margin:auto; background: none; color:black;
+	     				 padding: 20px; text-align: center; line-height: 200%; margin-bottom: -110px;}
+			.clock { display: flex; flex-wrap: wrap; justify-content: space-between; 
+					 margin:200px; margin-bottom: 200px; }
+
+			.clock img {width:500px; height:auto;}
+			.chicken {margin-top: 150px;}
+			
+
+
+			
+
+
+</style>
+
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/smilies/smi-2/smi189.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2010/06/21/smiley-normal-select.html" target="_blank" title="Smiley Normal Select"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Smiley Normal Select" style="position:absolute; top: 0px; right: 0px;" /></a>
+</style>
+
+</head>
+
+	
+	<body style="background: yellow; overflow-x: hidden; margin-top: 0;">
+	<div id="ticker1" class="ticker" data-speed="1" data-gap="200">
+		<p style="position: absolute; margin: 0; margin-bottom: 10px;">
+		<span>Monday Funday ( ⌒ .̮ ⌒ )&nbsp; Monday F**k day ·̑.̮·̑ &nbsp; Monday Funday ( ⌒ ∇ ⌒) &nbsp; Monday F**k day ̀⁽ᵕ̈⁾ ́ &nbsp; Monday Funday ( ⌒ .̮ ⌒ ) &nbsp; Monday F**k day ·̑.̮·̑ &nbsp; Monday Funday ( ⌒ ∇ ⌒) &nbsp; Monday F**k day ̀⁽ᵕ̈⁾ ́ &nbsp; Monday Funday ( ⌒ .̮ ⌒ ) &nbsp; Monday F**k day &nbsp; </span>
+		</p>
+	</div>
+
+	<section>
+		<div class="Monday">
+			<header id="Monday" style="text-align: center; margin-top: 5px;">
+				<h1>아, 또 월요일이다 ⋯ !<h1>
+					<h2 class="cry">.·°՞(¯□¯)՞°·.<br>ᶠᶸᶜᵏ !</h2>
+				
+			</header>
+		</div>
+		
+
+
+	</section>
+
+	<section>
+		<div class="MF_writing">
+			<p>언제 찾아와도 지긋지긋한 월요일 아침,
+			<br>오늘부터 귀여운 금융치료의 도움을 받아보면 어떨까요?
+			<br>오직 SSC 고객 여러분을 위한 자명종 컬렉션을 골라보세요.
+			</p>
+		</div>
+	</section>
+
+	<div class="clock">
+	<a href="https://www.instagram.com/p/C5ZK60UPijU/?img_index=2">
+		<img src="chicken8.png" class="chicken">
+	</a>
+	<a href="https://www.secondvoyage.ca/listing/785399212/ticki-tack-clock-with-original">
+	<img src="green8.png">
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+<script type="text/javascript">
+
+	bhTicker("ticker",2);
+
+function bhTicker(cl,speed) {
+	let t = document.getElementsByClassName(cl);
+	let ta = []; let ts=[]; let tg=[]; let tw=[];
+	let container,mover,text,textWidth;
+
+	for(let i=0; i<t.length; i++){
+		container = t[i];
+		mover = container.getElementsByTagName("p").item(0);
+		text = mover.getElementsByTagName("span").item(0);
+
+		// set
+		mover.style.position = "absolute";
+		mover.style.margin = "0 0 0 0";
+		mover.style.left = "0px";
+		mover.leftPosition = 0;
+		mover.style.width = text.childNodes.item(0).length + "em";	// stretch width
+		textWidth = text.offsetWidth;
+
+		let speed2 = t[i].dataset.speed;
+		if (textWidth > container.offsetWidth) {
+			if(speed2 == 1){speed2 = 2};
+			mover.style.width = textWidth * speed2 + "px";
+			
+			for(let k=0;k<speed2;k++){
+				mover.innerHTML += mover.innerHTML;	
+			}
+		}
+
+		tw.push(textWidth);
+		tg.push(t[i].dataset.gap);
+		ts.push(t[i].dataset.speed);
+		ta.push(mover);
+	}
+
+	  // Remove the second ticker line if it exists
+    if (ta.length > 1) {
+        ta[1].parentNode.removeChild(ta[1]);
+    }
+
+	let tickerAction = function() {
+		for(let j=0;j<ta.length;j++){
+			let speed = parseInt(ts[j]);
+			let gap = parseInt(tg[j]);
+			let tw2 = tw[j];
+
+			if (ta[j].leftPosition * -speed > tw2*speed) {
+				ta[j].leftPosition = -speed;
+			} else {
+				ta[j].leftPosition -= speed;
+			}
+
+			ta[j].style.left = (-gap + ta[j].leftPosition) + "px";
+		}
+		window.requestAnimationFrame(tickerAction);
+	};
+
+	tickerAction();
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
